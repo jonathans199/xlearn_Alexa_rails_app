@@ -1,9 +1,9 @@
-# README
+# xLearn
+Application used to learn a new language with Alexa with voice commands.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+By Oksana Hoeckele & Jonathan Sanchez
 
-Things you may want to cover:
+##Options 
 
 * Ruby version
 
