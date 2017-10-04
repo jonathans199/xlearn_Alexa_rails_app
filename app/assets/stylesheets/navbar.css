@@ -3,6 +3,7 @@
   font-size: 16px;
   letter-spacing: .5px;
 }*/
+
 h1 {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
@@ -11,9 +12,9 @@ h1 {
 header {
   position: relative;
   background-size: cover;
-  background-color: #7d6060;
+  /*background-color: #7d6060;*/
   background-position: center;
-  padding-top: 300px;
+  /*padding-top: 300px;*/
   padding-bottom: 300px;
 }
 .overlay {
@@ -37,7 +38,7 @@ header {
   transition: all ease-in-out 0.4s;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #fff;
+  color: #666;
   background-color: transparent;
 }
 .navbar-nav > li > a {
@@ -56,7 +57,8 @@ header {
   padding: 17px 15px;
 }
 .navbar-brand img {
-  width: 200px;
+  width: 100px;
+  margin-top: -10px;
 }
 .shrink-nav {
   color: #000 !important;
@@ -175,3 +177,34 @@ header {
 
 
 */
+
+
+
+
+.video-section .pattern-overlay {
+background-color: rgba(71, 71, 71, 0.59);
+padding: 110px 0 32px;
+min-height: 496px;
+/* Incase of overlay problems just increase the min-height*/
+}
+.video-section h1, .video-section h3{
+text-align:center;
+color:#fff;
+}
+.video-section h1{
+font-size:110px;
+font-family: 'Buenard', serif;
+font-weight:bold;
+text-transform: uppercase;
+margin: 40px auto 0px;
+text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+}
+.video-section h3{
+font-size: 25px;
+font-weight:lighter;
+margin: 0px auto 15px;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}

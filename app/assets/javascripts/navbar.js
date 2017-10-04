@@ -1,5 +1,4 @@
-$( document ).ready(() => {
-  $(window).scroll(function(){
+$(window).scroll(function(){
     var wscroll = $(this).scrollTop();
     if(wscroll > 50){
      $(".navbar").addClass("shrink-nav");
@@ -7,5 +6,10 @@ $( document ).ready(() => {
     else{
       $(".navbar").removeClass("shrink-nav");
     }
-  });
-})
+});
+
+$(document).ready(function () {
+
+    $(".player").mb_YTPlayer();
+
+});
