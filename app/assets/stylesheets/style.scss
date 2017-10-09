@@ -16,6 +16,9 @@
   width: 40px !important;
 }
 
+.video {
+      width: 100%;
+}
 
 body {
   font-family: "Roboto", Arial, sans-serif;
@@ -28,7 +31,57 @@ body {
 }
 body.fh5co-overflow {
   overflow-x: auto;
+  margin-top: -360px;
 }
+
+
+/*new background video css*/
+
+.video_container {
+  position: relative;
+  &:before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -9px;
+    left: 0px;
+    z-index: 2;
+    background: #454647;
+    opacity: 0.7;
+  }
+}
+
+
+.video_container video {
+    position:relative;
+    z-index:0;
+}
+.video_overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+}
+
+.greenoverlay {
+    /*height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background: #454647;
+    opacity: 0.5;*/
+}
+
+
+
+
 
 a {
   color: #ff8d39;
@@ -352,11 +405,16 @@ body {
   opacity: .54;
   z-index: 9;
 }
+
+
+
+
 #fh5co-hero .fh5co-intro {
   display: table;
   width: 100%;
   z-index: 10;
   position: relative;
+  margin-left: 8%;
 }
 @media screen and (max-width: 480px) {
   #fh5co-hero .fh5co-intro {
