@@ -1,39 +1,36 @@
-<header>
-  <!-- navigation -->
-  <nav class="navbar navbar-default">
+<!-- Loader -->
+<!-- <div class="fh5co-loader"></div> -->
+
+<div id="fh5co-page">
+  <section id="fh5co-header">
     <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="navbar-brand"> <a href="#">
-          <%= image_tag("xlearn200px_white.png") %>
-
-        </div>
-        <!-- <a class="navbar-brand" href="#">LOGO</a> -->
-      </div>
-
-      <div id="facebook-login-btb">
-         <% if current_user %>
-           Signed in as <strong><%= current_user.name %></strong>!
-           <%= link_to "Sign out", signout_path, method: 'delete', id: "sign_out" %>
-         <% else %>
-           <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, id: "sign_in" %>
-         <% end %>
-       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">courses</a></li>
-          <li><a href="#">about</a></li>
-          <li><a href="#">contact</a></li>
+      <nav role="navigation">
+        <ul class="pull-left left-menu">
+          <li><a href="#fh5co-projects">COURSES</a></li>
+          <li><a href="#fh5co-features">ABOUT</a></li>
+          <li><a href="#fh5co-footer">CONTACT</a></li>
         </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav><!-- /navigation -->
-</header>
+        <h1 id="fh5co-logo">
+          <a href="index.html" class="xlearn_logo"><%= image_tag("xlearn200px_white.png") %>
+            <!-- <span>X</span>Learn -->
+          </a></h1>
+        <ul class="pull-right right-menu">
+          <% if current_user %>
+            <li class="fh5co-cta-btn">
+              <a> Hi <%= current_user.name %></a>
+            </li>
+          <li class="fh5co-cta-btn">
+              <%= link_to "Sign out", signout_path, method: 'delete', id: "sign_out" %>
+            </li>
+              <% else %>
+            <li class="fh5co-cta-btn">
+              <%= link_to "Log in with Facebook", user_facebook_omniauth_authorize_path, id: "sign_in" %>
+            </li>
+              <% end %>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+
+  <!-- #fh5co-header -->
