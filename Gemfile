@@ -44,6 +44,12 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
+# # code to work with ngrok
+# post '/' do
+#  p request.body.read
+# end
+
+
 
 # group :development do
 #  gem 'sqlite3'

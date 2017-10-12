@@ -1,36 +1,7 @@
 <!-- Loader -->
 <!-- <div class="fh5co-loader"></div> -->
 
-<div id="fh5co-page">
-  <section id="fh5co-header">
-    <div class="container">
-      <nav role="navigation">
-        <ul class="pull-left left-menu">
-          <li><a href="#fh5co-projects">COURSES</a></li>
-          <li><a href="#fh5co-features">ABOUT</a></li>
-          <li><a href="#fh5co-footer">CONTACT</a></li>
-        </ul>
-        <h1 id="fh5co-logo">
-          <a href="index.html" class="xlearn_logo"><%= image_tag("xlearn200px_white.png") %>
-            <!-- <span>X</span>Learn -->
-          </a></h1>
-        <ul class="pull-right right-menu">
-          <% if current_user %>
-            <li class="fh5co-cta-btn">
-              <a> Hi <%= current_user.name %></a>
-            </li>
-          <li class="fh5co-cta-btn">
-              <%= link_to "Sign out", signout_path, method: 'delete', id: "sign_out" %>
-            </li>
-              <% else %>
-            <li class="fh5co-cta-btn">
-              <%= link_to "Log in with Facebook", user_facebook_omniauth_authorize_path, id: "sign_in" %>
-            </li>
-              <% end %>
-        </ul>
-      </nav>
-    </div>
-  </section>
+
 
 
   <!-- #fh5co-header -->
