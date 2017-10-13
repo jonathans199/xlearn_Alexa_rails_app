@@ -1,3 +1,8 @@
+<div class="subpage-header">
+</div>
+
+<div class="container">
+  <div class="row">
 <div id="course-show">
   <p id="notice"><%= notice %></p>
 
@@ -11,7 +16,11 @@
     <%= @course.description %>
   </p>
 
+  <% if current_user %>
   <%= link_to 'Edit', edit_course_path(@course) %> |
   <%= link_to 'Back', courses_path %>
 
+<% end %>
+</div>
+</div>
 </div>

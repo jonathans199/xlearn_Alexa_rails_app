@@ -11,8 +11,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
   end
 
+
   def failure
-    redirect_to static_pages_path
+    redirect_to root_path
   end
 
 end
