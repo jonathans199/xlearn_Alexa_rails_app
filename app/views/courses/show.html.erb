@@ -27,7 +27,8 @@
   <% end %>
 <% end %>
 
-  <p>(Spanish)
+<% if @course.course_name == "Spanish" %>
+<p>(Spanish)
 <br> Let’s learn how to order food in a restaurant. Your task would be to repeat after Alexa each phrase. Then Alexa will let you know if your pronunciation was correct. Please try to be as accurate as you can. You can always say Alexa stop or No if you want to exit the program.
 
 <br>Let’s start!
@@ -67,7 +68,7 @@
 <br>Waitress: Do you have any room for dessert?
 
 <br>Customer: No, just bring the check please.</p>
-
+<% end %>
   <br><% if current_user %>
   <%= link_to 'Edit', edit_course_path(@course) %> |
   <%= link_to 'Back', courses_path %>
