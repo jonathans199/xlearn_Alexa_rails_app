@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   get '/signout', to: 'sessions#destroy'
   delete '/signout', to: 'sessions#destroy'
 
-  resources :courses
+  resources :courses do
+    resources :questions
+  end
   resources :users
   root 'static_pages#home'
 

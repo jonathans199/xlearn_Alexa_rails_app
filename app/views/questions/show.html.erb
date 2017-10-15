@@ -1,0 +1,22 @@
+<p>
+  <strong>Question:</strong>
+  <%= @question.question %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @question.answer %>
+</p>
+
+
+
+<% @course.questions.each do |question| %>
+  <%#= question.introduction %>
+  <%= question.question %>
+  <%= question.answer %><br>
+  <%= link_to 'Edit', edit_question_path(question) %>
+<% end %>
+
+<br><% if current_user %>
+<%= link_to 'Edit',  edit_course_question(@course) %> |
+<%= link_to 'Back', courses_path %>

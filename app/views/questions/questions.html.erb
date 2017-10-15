@@ -1,0 +1,10 @@
+
+<% if user_signed_in? %>
+
+    <div class="links btn-group">
+      <%= link_to "Edit", edit_course_question_path, class:"btn btn-custom" %>
+      <%= link_to "Delete", course_question_path, method: :delete, data: {
+        confirm: "Are you sure?"}, class:"btn btn-custom" %>
+    </div>
+
+  <% end %>
