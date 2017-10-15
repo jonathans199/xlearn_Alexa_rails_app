@@ -11,31 +11,31 @@ spanish_course = Course.new(course_name: "Spanish", description: "Spanish also c
 spanish_course.save!
 spanish_questions = [
   {
-    question: "https://xlearn-static.herokuapp.com/a_temp.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/project1_compressed.mp3",
     answer: "no this is my 1st time here"
   },
   {
-    question: "https://xlearn-static.herokuapp.com/a_temp.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/project2_compressed.mp3",
     answer: "sure why not"
   },
   {
-    question: "https://xlearn-static.herokuapp.com/a_temp.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/project3_compressed.mp3",
     answer: "sounds good I would like some steak"
   },
   {
-    question: "https://xlearn-static.herokuapp.com/a_temp.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/project4_compressed.mp3",
     answer: "medium rare"
   },
   {
-    question: "https://xlearn-static.herokuapp.com/a_temp.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/project5_compressed.mp3",
     answer: "just some water please"
   },
   {
-    question: "https://xlearn-static.herokuapp.com/a_temp.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/project6_compressed.mp3",
     answer: "great"
   },
   {
-    question: "https://xlearn-static.herokuapp.com/a_temp.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/project7_compressed.mp3",
     answer: "no just bring the check please"
   }
 ]
@@ -57,13 +57,10 @@ end
 #
 #
 
-Course.create(course_name: "German", description: "Far far away, behind the word mountains, far from the countries Vokalia..")
 Course.create(course_name: "Ukrainian", description: "The official language of Ukraine is Ukrainian, an East Slavic language which is the native language of 67.5% of Ukraine's population.")
 Course.create(course_name: "Portuguese", description: "Portuguese is a western Romance language and the sole official language of Portugal, Brazil, Cape Verde, Guinea-Bissau, Mozambique, Angola, and São")
 Course.create(course_name: "German", description: "German language, German Deutsch, official language of both Germany and Austria and one of the three official languages of Switzerland.")
 Course.create(course_name: "French", description: "French is a Romance language of the Indo-European family. It descended from the Vulgar Latin of the Roman Empire, as did all Romance languages.")
-Course.create(course_name: "Ukrainian", description: "Far far away, behind the word mountains, far from the countries Vokalia..")
-Course.create(course_name: "Portuguese", description: "Far far away, behind the word mountains, far from the countries Vokalia..")
 Course.create(course_name: "Italian", description: "Italian is a Romance language. By most measures, Italian, together with Sardinian, is the closest to Latin of the Romance languages.")
 
 puts "Seed file completed! :)"
