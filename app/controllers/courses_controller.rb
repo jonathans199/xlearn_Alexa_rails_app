@@ -10,6 +10,16 @@ class CoursesController < ApplicationController
   # GET /courses/1
   # GET /courses/1.json
   def show
+    questions = @course.questions.map do |question|
+      {
+        question: question.question_tag,
+        answer: [question.answer]
+      }
+    end
+    respond_to do |format|
+      format.html { render @courses }
+      format.json { render json: questions }
+    end
   end
 
   # GET /courses/new
