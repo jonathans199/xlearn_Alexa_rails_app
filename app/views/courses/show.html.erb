@@ -30,48 +30,81 @@
         <% if @course.course_name == "Spanish" %>
         <div class='col-md-6'>
             <%#= render 'form' %>
-          <p><div class = "course-info">Spanish
-            <br> Let’s learn how to order food in a restaurant. Your task would be to repeat after Alexa each phrase. Then Alexa will let you know if your pronunciation was correct. Please try to be as accurate as you can. You can always say Alexa stop or No if you want to exit the program.
+          <p><div class = "course-info"><strong>Spanish</strong>
+            <br>This lesson will focus on improving your pronunciation skills and teaching you how to order food at a restaurant in English.
+            <br>You will listen to a conversation between a waiter and Alexa. Once Alexa has finished, please repeat her exact phrase. She will then repeat your phrase back to you and tell you whether or not you pronounced it correctly.
+          <br><strong>To start the program say:</strong> Alexa Xlearn
+          <br><strong>Choose the language of instruction:</strong> Spanish
+          <br><strong>To exit the program say:</strong> Stop
 
-            <br>Let’s start!
+            <br><strong>Waiter:</strong> Hello sir. Welcome to our restaurant. Have you eaten here before?
 
-            <br>You: "Alexa Xlearn"
-            <br>Alexa: "Hello! Welcome to xLearn: We are offering a solution to improve your language skills: say practice if you want to start",
-            <br>You: Practice
-            <br>Alexa: "Okay let's practice: this lesson will focus on teaching you how to order some food in a restaurant: Are you ready to start?"
-            <br>You: Yes
+            <br><strong>Alexa:</strong> No. This is my first time here.
 
-            <br>Waitress: Hello sir. Welcome to our restaurant. Have you eaten here before?
+            <br><strong>Waiter:</strong> Oh. Well, would you like to hear about today’s special?
 
-            <br>Customer: No. This is my first time here.
+            <br><strong>Alexa:</strong> Sure, why not?
 
-            <br>Waitress: Oh. Well, would you like to hear about today’s specials?
+            <br><strong>Waiter:</strong> Ok. We have a 10 oz. stake with some mashed potatoes and a salad as your side.
 
-            <br>Customer: Sure, why not?
+            <br><strong>Alexa:</strong> Sounds good I would like some steak
 
-            <br>Waitress: Ok. We have a 10 oz. stake with some mashed potatoes and a salad as your sides.
+            <br><strong>Waiter:</strong> Good choice. How would you like your steak?
 
-            <br>Customer: Sounds good I would like some steak
+            <br><strong>Alexa:</strong> Medium rare.
 
-            <br>Waitress: Good choice. How would you like your steak?
+            <br><strong>Waiter:</strong> Ok. What would you like to drink?
 
-            <br>Customer: Medium rare.
+            <br><strong>Alexa:</strong> Just some water please.
 
-            <br>Waitress: Ok. What would you like to drink?
+            <br><strong>Waiter:</strong> How was your food?
 
-            <br>Customer: Just some water please.
+            <br><strong>Alexa:</strong> Great.
 
-            <br>Customer: No. I’m good. Thanks.
+            <br><strong>Waiter:</strong> Do you have any room for dessert?
 
-            <br>Waitress: How was your food?
-
-            <br>Customer: Great.
-
-            <br>Waitress: Do you have any room for dessert?
-
-            <br>Customer: No, just bring the check please.</p>
+            <br><strong>Alexa:</strong> No, just bring the check please.</p>
           </div>
             </div>
+
+            <div class='col-md-6'>
+                <%#= render 'form' %>
+              <p><div class = "course-info"><strong>Spanish</strong>
+                <br>This lesson will focus on improving your pronunciation skills and teaching you how to order food at a restaurant in English.
+                <br>You will listen to a conversation between a waiter and Alexa. Once Alexa has finished, please repeat her exact phrase. She will then repeat your phrase back to you and tell you whether or not you pronounced it correctly.
+              <br><strong>To start the program say:</strong> Alexa Xlearn
+              <br><strong>Choose the language of instruction:</strong> Spanish
+              <br><strong>To exit the program say:</strong> Stop
+
+                <br><strong>Waiter:</strong> Hello sir. Welcome to our restaurant. Have you eaten here before?
+
+                <br><strong>Alexa:</strong> No. This is my first time here.
+
+                <br><strong>Waiter:</strong> Oh. Well, would you like to hear about today’s special?
+
+                <br><strong>Alexa:</strong> Sure, why not?
+
+                <br><strong>Waiter:</strong> Ok. We have a 10 oz. stake with some mashed potatoes and a salad as your side.
+
+                <br><strong>Alexa:</strong> Sounds good I would like some steak
+
+                <br><strong>Waiter:</strong> Good choice. How would you like your steak?
+
+                <br><strong>Alexa:</strong> Medium rare.
+
+                <br><strong>Waiter:</strong> Ok. What would you like to drink?
+
+                <br><strong>Alexa:</strong> Just some water please.
+
+                <br><strong>Waiter:</strong> How was your food?
+
+                <br><strong>Alexa:</strong> Great.
+
+                <br><strong>Waiter:</strong> Do you have any room for dessert?
+
+                <br><strong>Alexa:</strong> No, just bring the check please.</p>
+              </div>
+                </div>
               </div>
                 <% end %>
                 <br><% if current_user %>
