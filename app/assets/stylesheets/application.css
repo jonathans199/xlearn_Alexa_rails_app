@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+.course-info {
+  box-sizing: border-box;
+background-color: #f4f3ee;
+border: #42250C solid 2px;
+border-radius: 5px;
+// 	box-shadow: 3px 3px 5px 6px #1C0F02;
+padding: 1em 1.25em;
+
+
+}

@@ -11,31 +11,31 @@ spanish_course = Course.new(course_name: "Spanish", description: "Spanish also c
 spanish_course.save!
 spanish_questions = [
   {
-    question: "https://s3.amazonaws.com/xlearnaudio/project1_compressed.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/audio1.mp3",
     answer: "no this is my 1st time here"
   },
   {
-    question: "https://s3.amazonaws.com/xlearnaudio/project2_compressed.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/audio2.mp3",
     answer: "sure why not"
   },
   {
-    question: "https://s3.amazonaws.com/xlearnaudio/project3_compressed.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/audio3.mp3",
     answer: "sounds good I would like some steak"
   },
   {
-    question: "https://s3.amazonaws.com/xlearnaudio/project4_compressed.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/audio4.mp3",
     answer: "medium rare"
   },
   {
-    question: "https://s3.amazonaws.com/xlearnaudio/project5_compressed.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/audio5.mp3",
     answer: "just some water please"
   },
   {
-    question: "https://s3.amazonaws.com/xlearnaudio/project6_compressed.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/audio6.mp3",
     answer: "great"
   },
   {
-    question: "https://s3.amazonaws.com/xlearnaudio/project7_compressed.mp3",
+    question: "https://s3.amazonaws.com/xlearnaudio/audio7.mp3",
     answer: "no just bring the check please"
   }
 ]

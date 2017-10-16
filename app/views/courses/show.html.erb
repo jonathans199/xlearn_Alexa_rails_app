@@ -3,77 +3,82 @@
 
 <div class="container">
   <div class="row">
-<div id="course-show">
-  <p id="notice"><%= notice %></p>
+    <div id="course-show">
+      <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Course name:</strong>
-    <%= @course.course_name %>
-  </p>
+      <p>
+        <strong>Course name:</strong>
+        <%= @course.course_name %>
+      </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= @course.description %>
-  </p>
+      <p>
+        <strong>Description:</strong>
+        <%= @course.description %>
+      </p>
 
-<br><% if current_user %>
-  <% @course.questions.each do |question| %>
-    <br><audio controls>
-      <source src="<%= question.question %>" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <%= question.answer %>
-    <%= link_to 'Edit', edit_course_question_path(@course, question) %>
-  <% end %>
-<% end %>
+      <br><% if current_user %>
+      <% @course.questions.each do |question| %>
+      <br><audio controls>
+        <source src="<%= question.question %>" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <%= question.answer %>
+        <%= link_to 'Edit', edit_course_question_path(@course, question) %>
+        <% end %>
+        <% end %>
 
-<% if @course.course_name == "Spanish" %>
-<p>(Spanish)
-<br> Let’s learn how to order food in a restaurant. Your task would be to repeat after Alexa each phrase. Then Alexa will let you know if your pronunciation was correct. Please try to be as accurate as you can. You can always say Alexa stop or No if you want to exit the program.
+        <% if @course.course_name == "Spanish" %>
+        <div class='col-md-6'>
+            <%#= render 'form' %>
+          <p><div class = "course-info">Spanish
+            <br> Let’s learn how to order food in a restaurant. Your task would be to repeat after Alexa each phrase. Then Alexa will let you know if your pronunciation was correct. Please try to be as accurate as you can. You can always say Alexa stop or No if you want to exit the program.
 
-<br>Let’s start!
+            <br>Let’s start!
 
-<br>You: "Alexa Xlearn"
-<br>Alexa: "Hello! Welcome to xLearn: We are offering a solution to improve your language skills: say practice if you want to start",
-<br>You: Practice
-<br>Alexa: "Okay let's practice: this lesson will focus on teaching you how to order some food in a restaurant: Are you ready to start?"
-<br>You: Yes
+            <br>You: "Alexa Xlearn"
+            <br>Alexa: "Hello! Welcome to xLearn: We are offering a solution to improve your language skills: say practice if you want to start",
+            <br>You: Practice
+            <br>Alexa: "Okay let's practice: this lesson will focus on teaching you how to order some food in a restaurant: Are you ready to start?"
+            <br>You: Yes
 
-<br>Waitress: Hello sir. Welcome to our restaurant. Have you eaten here before?
+            <br>Waitress: Hello sir. Welcome to our restaurant. Have you eaten here before?
 
-<br>Customer: No. This is my first time here.
+            <br>Customer: No. This is my first time here.
 
-<br>Waitress: Oh. Well, would you like to hear about today’s specials?
+            <br>Waitress: Oh. Well, would you like to hear about today’s specials?
 
-<br>Customer: Sure, why not?
+            <br>Customer: Sure, why not?
 
-<br>Waitress: Ok. We have a 10 oz. stake with some mashed potatoes and a salad as your sides.
+            <br>Waitress: Ok. We have a 10 oz. stake with some mashed potatoes and a salad as your sides.
 
-<br>Customer: Sounds good I would like some steak
+            <br>Customer: Sounds good I would like some steak
 
-<br>Waitress: Good choice. How would you like your steak?
+            <br>Waitress: Good choice. How would you like your steak?
 
-<br>Customer: Medium rare.
+            <br>Customer: Medium rare.
 
-<br>Waitress: Ok. What would you like to drink?
+            <br>Waitress: Ok. What would you like to drink?
 
-<br>Customer: Just some water please.
+            <br>Customer: Just some water please.
 
-<br>Customer: No. I’m good. Thanks.
+            <br>Customer: No. I’m good. Thanks.
 
-<br>Waitress: How was your food?
+            <br>Waitress: How was your food?
 
-<br>Customer: Great.
+            <br>Customer: Great.
 
-<br>Waitress: Do you have any room for dessert?
+            <br>Waitress: Do you have any room for dessert?
 
-<br>Customer: No, just bring the check please.</p>
-<% end %>
-  <br><% if current_user %>
-  <%= link_to 'Edit', edit_course_path(@course) %> |
-  <%= link_to 'Back', courses_path %>
+            <br>Customer: No, just bring the check please.</p>
+          </div>
+            </div>
+              </div>
+                <% end %>
+                <br><% if current_user %>
+                <%= link_to 'Edit', edit_course_path(@course) %> |
+                <%= link_to 'Back', courses_path %>
 
-<% end %>
-</div>
-</div>
-</div>
+                <% end %>
+
+            </div>
+          </div>
