@@ -14,9 +14,11 @@
   <%#= question.introduction %>
   <%= question.question %>
   <%= question.answer %><br>
-  <%= link_to 'Edit', edit_question_path(question) %>
+  <%= link_to 'Edit', edit_course_question_path(question) %>
 <% end %>
 
-<br><% if current_user %>
-<%= link_to 'Edit',  edit_course_question(@course) %> |
-<%= link_to 'Back', courses_path %>
+<br>
+<% if current_user %>
+  <%= link_to 'Edit',  edit_course_question_path(@course) %> |
+  <%= link_to 'Back', courses_path %>
+<% end %>

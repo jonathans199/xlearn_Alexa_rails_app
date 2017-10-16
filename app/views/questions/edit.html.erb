@@ -1,1 +1,22 @@
-FORM HERE
+    <!-- <h1>Edit a Lesson</h1>
+    <%#= simple_form_for @course.questions, :html => { :multipart => true } do |f| %>
+      <%#= f.input :introduction %>
+      <%#= f.input :question %>
+      <%#= f.input :answer %>
+      <%#= f.button :submit, :class => "btn-custom2" %>
+    <#% end %> -->
+
+    <%= render 'form', question: @question %>
+
+    <div class="container">
+      <div class="row">
+    <p>
+
+
+
+
+
+    <%#= link_to 'Show', @question %> |
+    <%= link_to 'Back', root_path %>
+    </div>
+    </div>

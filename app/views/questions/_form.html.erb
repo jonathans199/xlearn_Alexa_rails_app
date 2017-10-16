@@ -1,0 +1,35 @@
+<div class="subpage-header">
+</div>
+
+<div class="container">
+  <div class="row">
+    <%= form_with(model:question, url: [@course, question], local: true, method: :put) do |form| %>
+      <% if question.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(course.errors.count, "error") %> prohibited this course from being saved:</h2>
+
+          <ul>
+          <% question.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="form-group">
+        <%= form.label :question %>
+        <%= form.url_field :question, value: question.question, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= form.label :answer %>
+        <%= form.text_field :answer, value: question.answer, class: "form-control"  %>
+      </div>
+
+      <div>
+        <%= form.submit "Submit", class:"btn btn-default" %>
+      
+      </div>
+    <% end %>
+  </div>
+</div>

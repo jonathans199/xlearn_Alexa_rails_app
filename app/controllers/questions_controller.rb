@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
   before_action :find_course
-  before_action :set_question, only: [:edit, :update, :destroy]
+  before_action :set_question, only: [:edit, :update, :destroy, :show]
   before_action :authenticate_user!, only: [:new, :edit]
 
   def new
@@ -12,11 +12,11 @@ class QuestionsController < ApplicationController
 
     respond_to do |format|
       if @question.save
-        format.html { redirect_to @question, notice: 'Course was successfully created.' }
+        format.html { redirect_to course_path(@course), notice: 'Course was successfully created.' }
         format.json { render :show, status: :created, location: @question }
       else
         format.html { render :new }
-        format.json { render json: @questions.errors, status: :unprocessable_entity }
+        format.json { render json: @question.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -25,13 +25,12 @@ class QuestionsController < ApplicationController
   end
 
   def show
-    @question = current_user.question
   end
 
   def update
     respond_to do |format|
-      if @question.update(course_params)
-        format.html { redirect_to @question, notice: 'Course was successfully updated.' }
+      if @question.update(question_params)
+        format.html { redirect_to course_path(@question.course), notice: 'Course was successfully updated.' }
         format.json { render :show, status: :ok, location: @question }
       else
         format.html { render :edit }
@@ -63,6 +62,6 @@ class QuestionsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def question_params
-    params.require(:question).permit(:course_name, :description, :introduction, :questions, :answers)
+    params.require(:question).permit(:course_name, :description, :question, :answer)
   end
 end
