@@ -20,7 +20,12 @@
 
 <br>
 <% if current_user %>
-    <%= link_to 'New Course', new_course_path %>
+<div class="container">
+  <div class="btn btn-primary2 col-md-12">
+    <h2>Create <%= link_to 'New Course', new_course_path %> here</h2>
+  </div>
+</div>
+<br>
 <% end %>
 
 

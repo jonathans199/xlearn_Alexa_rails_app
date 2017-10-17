@@ -151,10 +151,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   border: 2px solid #ff8d39;
 }
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #ff984b !important;
+  background: rgba(102, 102, 102, 0.33) !important;
   border-color: #ff984b !important;
 }
+
 .btn-primary.btn-outline {
   background: transparent;
   color: #ff8d39;

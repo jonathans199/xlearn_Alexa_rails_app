@@ -46,8 +46,8 @@
         <div class="container">
           <div class="row row-bottom-padded-md">
             <div class="col-md-6 col-md-offset-3 text-center">
-              <h2 class="fh5co-lead animate-box">Courses</h2>
-              <p class="fh5co-sub-lead animate-box">Pick a course and Alexa will begin the lesson</p>
+              <h2 class="fh5co-lead animate-box">Pick Your Language</h2>
+              <p class="fh5co-sub-lead animate-box">Pick your language and Alexa will begin english lesson</p>
             </div>
           </div>
           <div class="row">
@@ -56,7 +56,7 @@
               <a href="/courses/<%= course.id %>" class="fh5co-project-item">
                 <%= image_tag("#{course.course_name}.jpg", class: 'img-responsive') %>
                 <div class="fh5co-text">
-                  <h2><%= course.course_name.upcase %></h2>
+                  <span>I SPEAK</span> <h2><%= course.course_name.upcase %></h2>
                   <p><%= course.description %></p>
                 </div>
               </a>
