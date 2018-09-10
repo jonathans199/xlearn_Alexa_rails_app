@@ -1,24 +1,8 @@
 # xLearn
-Application used to learn a new language with Alexa with voice commands.
+Application used to learn a English with native language instructions with Alexa using voice commands.
 
 By Oksana Hoeckele & Jonathan Sanchez
 
-##Options 
+# Rails 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Connects to Lambda's AWS Alexa's JavaScript commands, which pulls the recordings from Rails app, hosted in Heroku
